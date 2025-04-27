@@ -33,4 +33,3 @@ transformers==4.48.1
 typing_extensions==4.12.2
 urllib3==2.3.0
 uvicorn==0.34.0
-gunicorn
