@@ -66,6 +66,11 @@ async def predict_emotion(input_data: TextInput):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+# Health check route
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 # Run the server
 if __name__ == "__main__":
     import uvicorn
