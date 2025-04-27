@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.ipynb
+*.pkl
+*.pt
+venv/
+.env
+*.zip
+*.tar.gz
+Reddit_Mental_Health_Trained_Model/

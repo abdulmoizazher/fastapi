@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environments
+myenv/
+.env/
+.venv/
+
+# VS Code (if you use it)
+.vscode/
