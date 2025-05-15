@@ -7,6 +7,14 @@ from typing import List
 # Initialize FastAPI app
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # ✅ Allow all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
+
 # Load the trained model and tokenizer
 model_path = "abdulmuzil/sentimental_model"   # Path to your trained model uploaded on hugging face 
 model = BertForSequenceClassification.from_pretrained(model_path)
